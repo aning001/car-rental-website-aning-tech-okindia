@@ -18,11 +18,39 @@
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="fleet.html" class="nav-link">Fleet</a>
+                <a href="services.html" class="nav-link">Services</a>
                 <a href="blog.html" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
             </div>
-            <a href="https://wa.me/917249367599" class="btn btn-primary">Book Now</a>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <a href="tel:+917249367599" class="btn btn-primary hide-mobile"><i data-lucide="phone"></i> Call Now</a>
+                <button id="menu-btn" class="menu-btn-trigger"><i data-lucide="menu"></i></button>
+            </div>
         </div>
     </nav>
+
+    <div id="mobile-menu" style="display: none; position: fixed; inset: 0; z-index: 1100; background: white; flex-direction: column; color: #171717;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
+            <div class="logo">
+                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+            </div>
+            <button id="close-menu" style="background: none; border: none; padding: 10px;"><i data-lucide="x"></i></button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px; padding: 40px;">
+            <a href="index.html" style="font-size: 24px; font-weight: 900;">Home</a>
+            <a href="fleet.html" style="font-size: 24px; font-weight: 900;">Fleet</a>
+            <a href="services.html" style="font-size: 24px; font-weight: 900;">Services</a>
+            <a href="blog.html" style="font-size: 24px; font-weight: 900;">Blog</a>
+            <a href="about.html" style="font-size: 24px; font-weight: 900;">About Us</a>
+            <a href="faq.html" style="font-size: 24px; font-weight: 900;">FAQ</a>
+        </div>
+        <div style="margin-top: auto; padding: 20px; border-top: 1px solid #eee;">
+            <a href="tel:+917249367599" class="btn btn-primary" style="margin-bottom: 12px; width: 100%;">Call Now</a>
+            <a href="https://wa.me/917249367599" target="_blank" class="btn" style="background: #25D366; color: white; width: 100%;">WhatsApp Booking</a>
+        </div>
+    </div>
 
     <article id="blog-content" style="padding-top: 140px;">
         <div class="container" style="margin-bottom: 40px;">

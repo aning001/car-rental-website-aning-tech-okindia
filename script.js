@@ -2,9 +2,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Lucide icons
-    if (window.lucide) {
-        window.lucide.createIcons();
-    }
+    const initIcons = () => {
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
+    };
+    initIcons();
+
+    // Fallback if script loads late
+    setTimeout(initIcons, 1000);
+    setTimeout(initIcons, 2000);
 
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
