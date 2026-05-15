@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet | Self Drive Car Rental in Utroda - OK India</title>
+    <meta name="description" content="Explore our wide range of cars for rental in Utroda and self drive car rental in Colva Beach. SUVs, Sedans, and Hatchbacks at best prices.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        .filter-btn { padding: 12px 24px; border-radius: 99px; font-size: 12px; font-weight: 900; background: white; border: 1px solid #eee; cursor: pointer; text-transform: uppercase; }
+        .filter-btn.active { background: #f59e0b; color: white; border-color: #f59e0b; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled" data-no-transparent>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="fleet.html" class="nav-link" style="color: #f59e0b;">Fleet</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="testimonials.html" class="nav-link">Reviews</a>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <a href="tel:+917249367599" class="btn btn-primary hide-mobile"><i data-lucide="phone"></i> Call Now</a>
+                <button class="menu-btn-trigger" id="menu-btn" style="background: none; border: none; color: inherit; cursor: pointer;"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" style="display: none; position: fixed; inset: 0; z-index: 1100; background: white; flex-direction: column; color: #171717;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
+            <div class="logo">
+                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+            </div>
+            <button id="close-menu" style="background: none; border: none; padding: 10px;"><i data-lucide="x"></i></button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px; padding: 40px;">
+            <a href="index.html" style="font-size: 24px; font-weight: 900;">Home</a>
+            <a href="fleet.html" style="font-size: 24px; font-weight: 900;">Fleet</a>
+            <a href="services.html" style="font-size: 24px; font-weight: 900;">Services</a>
+            <a href="about.html" style="font-size: 24px; font-weight: 900;">About Us</a>
+            <a href="blog.html" style="font-size: 24px; font-weight: 900;">Blog</a>
+            <a href="faq.html" style="font-size: 24px; font-weight: 900;">FAQ</a>
+            <a href="testimonials.html" style="font-size: 24px; font-weight: 900;">Reviews</a>
+        </div>
+        <div style="margin-top: auto; padding: 20px; border-top: 1px solid #eee;">
+            <a href="tel:+917249367599" class="btn btn-primary" style="margin-bottom: 12px; width: 100%;">Call Now</a>
+            <a href="https://wa.me/917249367599" target="_blank" class="btn" style="background: #25D366; color: white; width: 100%;">WhatsApp Booking</a>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu (skipped for brevity, but would be in same format) -->
+
+    <section class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="section-subtitle">Goa's Largest Collection</span>
+                <h1 class="section-title">Our Diverse <span style="color: #f59e0b;">Fleet</span></h1>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 60px; flex-wrap: wrap;" id="filters">
+                <button class="filter-btn active" data-category="All">All Cars</button>
+                <button class="filter-btn" data-category="SUV">SUV & 4x4</button>
+                <button class="filter-btn" data-category="Hatchback">Hatchbacks</button>
+                <button class="filter-btn" data-category="Sedan">Sedans</button>
+                <button class="filter-btn" data-category="Luxury">Luxury</button>
+            </div>
+
+            <div class="fleet-grid" id="car-grid">
+                <!-- 12 Cars for variety -->
+                <!-- Car 1 -->
+                <div class="car-card" data-category="Hatchback">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Manual</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Maruti Swift</h4><span class="card-subtitle">Economy</span></div><div class="card-price"><p class="price-value">₹1200</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="car-card" data-category="SUV">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop"><span class="card-tag">4x4 Off-Road</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Mahindra Thar</h4><span class="card-subtitle">Adventure</span></div><div class="card-price"><p class="price-value">₹3500</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="car-card" data-category="SUV">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">7 Seater</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Maruti Ertiga</h4><span class="card-subtitle">Automatic</span></div><div class="card-price"><p class="price-value">₹2800</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <!-- Car 4 -->
+                <div class="car-card" data-category="Hatchback">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Premium</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Maruti Baleno</h4><span class="card-subtitle">Hatchback</span></div><div class="card-price"><p class="price-value">₹1500</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <!-- Car 5 -->
+                <div class="car-card" data-category="SUV">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop"><span class="card-tag">SUV</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Hyundai Creta</h4><span class="card-subtitle">Automatic</span></div><div class="card-price"><p class="price-value">₹3200</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <!-- Car 6 -->
+                <div class="car-card" data-category="Luxury">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1606611013016-969c19ba27bb?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Premium Sedan</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Audi A4</h4><span class="card-subtitle">Luxury</span></div><div class="card-price"><p class="price-value">₹8000</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <!-- Add 6 more -->
+                <div class="car-card" data-category="Hatchback">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Compact</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Tata Tiago</h4><span class="card-subtitle">MT</span></div><div class="card-price"><p class="price-value">₹1100</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <div class="car-card" data-category="Sedan">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Stylish</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Honda City</h4><span class="card-subtitle">AT</span></div><div class="card-price"><p class="price-value">₹2500</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <div class="car-card" data-category="SUV">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Hard Top</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Thar 4x2</h4><span class="card-subtitle">Diesel MT</span></div><div class="card-price"><p class="price-value">₹3000</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <div class="car-card" data-category="SUV">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Large Family</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Toyota Innova</h4><span class="card-subtitle">Crysta</span></div><div class="card-price"><p class="price-value">₹4500</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <div class="car-card" data-category="Hatchback">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Budget</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Maruti Celerio</h4><span class="card-subtitle">MT</span></div><div class="card-price"><p class="price-value">₹1100</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+                <div class="car-card" data-category="SUV">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop"><span class="card-tag">Sub Compact</span></div>
+                    <div class="card-content">
+                        <div class="card-header"><div class="card-title"><h4>Tata Nexon</h4><span class="card-subtitle">Manual</span></div><div class="card-price"><p class="price-value">₹1800</p></div></div>
+                        <div class="card-actions"><a href="tel:+917249367599" class="btn btn-outline">Call</a><a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Policy Section -->
+    <section class="section" style="background: #fafafa;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px;">
+                <div>
+                   <h2 class="section-subtitle">Fair Terms</h2>
+                   <h3 class="section-title" style="font-size: 32px;">Rental <span style="color: #f59e0b;">Policy</span></h3>
+                   <ul style="color: #525252; display: flex; flex-direction: column; gap: 16px;">
+                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> 240 KMs limit per day (enough for Goa)</li>
+                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> Fuel is not included (Return same level)</li>
+                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> Valid Laminated DL is mandatory</li>
+                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> Damage costs are borne by the hirer</li>
+                   </ul>
+                </div>
+                <div>
+                    <h2 class="section-subtitle">Easy Booking</h2>
+                   <h3 class="section-title" style="font-size: 32px;">How to <span style="color: #f59e0b;">Book?</span></h3>
+                   <div style="display: flex; flex-direction: column; gap: 20px;">
+                       <div style="display: flex; gap: 16px;">
+                           <div style="width: 32px; height: 32px; background: #f59e0b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; shrink: 0;">1</div>
+                           <p><strong>Pick Your Car:</strong> Select from our 50+ fleet above.</p>
+                       </div>
+                       <div style="display: flex; gap: 16px;">
+                           <div style="width: 32px; height: 32px; background: #f59e0b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; shrink: 0;">2</div>
+                           <p><strong>WhatsApp Us:</strong> Click the chat button to send your dates and car name.</p>
+                       </div>
+                       <div style="display: flex; gap: 16px;">
+                           <div style="width: 32px; height: 32px; background: #f59e0b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; shrink: 0;">3</div>
+                           <p><strong>Doorstep Delivery:</strong> We bring the car to your Goa location.</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Airport Information -->
+    <section class="section" style="background: #171717; color: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 class="section-title" style="color: #f59e0b;">Airport Delivery <span style="color: white;">Services</span></h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: center;">
+                <div style="padding: 40px; background: rgba(255,255,255,0.05); border-radius: 24px;">
+                    <h4 class="font-black uppercase italic" style="color: #f59e0b; font-size: 24px; margin-bottom: 12px;">Mopa Airport (GXP)</h4>
+                    <p style="opacity: 0.8;">New North Goa Airport. We provide instant rentals right outside the arrival gate.</p>
+                </div>
+                <div style="padding: 40px; background: rgba(255,255,255,0.05); border-radius: 24px;">
+                    <h4 class="font-black uppercase italic" style="color: #f59e0b; font-size: 24px; margin-bottom: 12px;">Dabolim Airport (GOI)</h4>
+                    <p style="opacity: 0.8;">Central Goa Airport. Reliable pickups even for late-night flights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="section">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <h2 class="section-title">Fleet <span style="color: #f59e0b;">FAQs</span></h2>
+            <div style="text-align: left; margin-top: 40px;">
+                <div class="faq-item">
+                    <button class="faq-btn"><h4>Are automatic cars available?</h4><i data-lucide="chevron-right"></i></button>
+                    <div class="faq-answer">Yes, we have a wide range of automatic cars including Thar AT, Creta AT, and Baleno AT for a stress-free drive.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn"><h4>What if the car breaks down?</h4><i data-lucide="chevron-right"></i></button>
+                    <div class="faq-answer">We provide 24/7 roadside assistance. In case of a major issue, we will provide a replacement vehicle within hours.</div>
+                </div>
+            </div>
+            <a href="faq.html" class="nav-link" style="margin-top: 40px; display: inline-block;">View More Fleet Questions</a>
+        </div>
+    </section>
+
+    <!-- SEO Content for Fleet -->
+    <section class="section" style="background: #fafafa;">
+        <div class="container" style="max-width: 900px;">
+            <h3 class="font-black uppercase italic" style="font-size: 24px; margin-bottom: 24px;">Rent a Car in Goa with <span style="color: #f59e0b;">Ease</span></h3>
+            <p style="color: #525252; line-height: 1.8;">If you're looking for a <strong>self drive car rental in North Goa</strong> or <strong>South Goa</strong>, OK India Car Rentals offers the most competitive rates. Our <strong>Thar rental Goa price</strong> starts from just ₹3000, making it the most affordable adventure car in the state. We also feature <strong>luxury car rentals in Goa</strong> for those who want to travel in style. Don't forget to check our <strong>monthly car rental Goa</strong> plans for long stays.</p>
+        </div>
+    </section>
+
+    <footer style="background: #fafafa; padding: 80px 0 40px; border-top: 1px solid #eee;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
+                <div style="grid-column: span 2;">
+                    <div class="logo" style="margin-bottom: 20px; color: #171717;">
+                        <div class="logo-icon"><i data-lucide="car"></i></div>
+                        <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+                    </div>
+                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in South and North Goa with honesty.</p>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Pages</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fleet.html">Our Fleet</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Contact</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
+                        <li><i data-lucide="phone" style="width: 14px; color: #f59e0b;"></i> +91 72493 67599</li>
+                        <li><i data-lucide="map-pin" style="width: 14px; color: #f59e0b;"></i> Utorda, South Goa</li>
+                        <li><i data-lucide="clock" style="width: 14px; color: #f59e0b;"></i> 24/7 Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #eee; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p style="font-size: 10px; font-weight: 900; text-transform: uppercase; color: #a3a3a3;">© 2024 OK INDIA CAR RENTALS GOA. ALL RIGHTS RESERVED.</p>
+                <div style="display: flex; gap: 20px;">
+                   <i data-lucide="instagram" style="width: 18px; color: #a3a3a3;"></i>
+                   <i data-lucide="facebook" style="width: 18px; color: #a3a3a3;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed-btns">
+        <a href="tel:+917249367599" class="fab fab-phone"><i data-lucide="phone"></i></a>
+        <a href="https://wa.me/917249367599" target="_blank" class="fab fab-whatsapp"><i data-lucide="message-circle"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

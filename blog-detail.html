@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - OK India Car Rentals Goa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body style="background: #fff;">
+    <nav id="navbar" class="scrolled" data-no-transparent>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="fleet.html" class="nav-link">Fleet</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <a href="https://wa.me/917249367599" class="btn btn-primary">Book Now</a>
+        </div>
+    </nav>
+
+    <article id="blog-content" style="padding-top: 140px;">
+        <div class="container" style="margin-bottom: 40px;">
+            <a href="index.html" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--primary); text-transform: uppercase; font-size: 13px;">
+                <i data-lucide="arrow-left" style="width: 16px;"></i> Back to Home
+            </a>
+        </div>
+        <!-- Content will be populated by JS -->
+    </article>
+
+    <footer style="background: #fafafa; padding: 80px 0 40px; border-top: 1px solid #eee;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
+                <div style="grid-column: span 2;">
+                    <div class="logo" style="margin-bottom: 20px; color: #171717;">
+                        <div class="logo-icon"><i data-lucide="car"></i></div>
+                        <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+                    </div>
+                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in South and North Goa with honesty.</p>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Pages</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fleet.html">Our Fleet</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Contact</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
+                        <li><i data-lucide="phone" style="width: 14px; color: #f59e0b;"></i> +91 72493 67599</li>
+                        <li><i data-lucide="map-pin" style="width: 14px; color: #f59e0b;"></i> Utorda, South Goa</li>
+                        <li><i data-lucide="clock" style="width: 14px; color: #f59e0b;"></i> 24/7 Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #eee; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p style="font-size: 10px; font-weight: 900; text-transform: uppercase; color: #a3a3a3;">© 2024 OK INDIA CAR RENTALS GOA. ALL RIGHTS RESERVED.</p>
+                <div style="display: flex; gap: 20px;">
+                   <i data-lucide="instagram" style="width: 18px; color: #a3a3a3;"></i>
+                   <i data-lucide="facebook" style="width: 18px; color: #a3a3a3;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const posts = {
+            'south-goa-beaches': {
+                tag: 'South Goa',
+                title: '10 Must-Visit South Goa Beaches',
+                image: 'https://images.unsplash.com/photo-1512789677070-60d59049986c?q=80&w=1200',
+                content: `
+                    <p>South Goa is often overshadowed by its more famous northern sibling, but for those in the know, it offers a level of serenity and natural beauty that is hard to find elsewhere. With your self-drive car from OK India, you can explore these hidden gems at your own pace.</p>
+                    <p>Here are our top picks:</p>
+                    <ol>
+                        <li><strong>Palolem Beach:</strong> Known for its crescent shape and rocky islands.</li>
+                        <li><strong>Agonda Beach:</strong> A quiet stretch of sand perfect for meditation.</li>
+                        <li><strong>Cola Beach:</strong> Famous for its freshwater lagoon right next to the sea.</li>
+                        <li><strong>Butterfly Beach:</strong> A tiny, hidden cove mostly accessible by boat or trek.</li>
+                    </ol>
+                    <p>Driving to South Goa is a pleasure. The roads are flanked by lush greenery and charming Portuguese-style houses. Make sure to pack your camera!</p>
+                `
+            },
+            'thar-best-car': {
+                tag: 'Adventure',
+                title: 'Why Thar is the Best Car for Goa?',
+                image: 'https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=1200',
+                content: `
+                    <p>The Mahindra Thar has become a symbol of adventure in Goa. But why is it so popular? Is it just the looks, or is there more to it?</p>
+                    <p>First, Goan roads can be unpredictable. While the main highways are great, the lanes leading to hidden beaches or waterfall treks can be rugged. The Thar\'s 4x4 capability and high ground clearance make it the perfect companion.</p>
+                    <p>Second, there\'s the style statement. Driving a Thar with the roof down through the palm-fringed roads of Parra or across the bridges of Mandovi is an experience in itself.</p>
+                    <p>At OK India, our Thar rentals are always in high demand. We recommend booking at least 2 weeks in advance during peak season.</p>
+                `
+            },
+            'save-money-rentals': {
+                tag: 'Smart Travel',
+                title: 'How to Save 30% on Rentals in Goa',
+                image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200',
+                content: `
+                    <p>Renting a car shouldn\'t break your vacation budget. Many tourists end up paying inflated prices because they book last minute or through middlemen.</p>
+                    <p>Here are some secrets to getting the best rates:</p>
+                    <ul>
+                        <li><strong>Book Directly:</strong> Avoid aggregators. Direct vendors like OK India offer better rates and personalized service.</li>
+                        <li><strong>Off-Peak Travel:</strong> If possible, visit between June and September. Rates drop significantly.</li>
+                        <li><strong>Long Term Rental:</strong> Booking for a week? Ask for a long-term discount.</li>
+                        <li><strong>Airport Pickups:</strong> Sometimes taking a car from the airport saves you on expensive taxi transfers.</li>
+                    </ul>
+                `
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const postId = urlParams.get('id');
+        const post = posts[postId] || posts['south-goa-beaches'];
+
+        document.getElementById('blog-content').innerHTML = `
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 60px;">
+                        <span class="blog-tag">${post.tag}</span>
+                        <h1 class="section-title" style="margin-top: 12px;">${post.title}</h1>
+                    </div>
+                    <img src="${post.image}" style="width: 100%; height: 450px; object-fit: cover; border-radius: 40px; margin-bottom: 60px; box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
+                    
+                    <div class="blog-body" style="font-size: 19px; line-height: 1.8; color: #404040;">
+                        ${post.content}
+                    </div>
+
+                    <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid #eee;">
+                        <h3 class="font-black uppercase italic" style="margin-bottom: 32px;">Share this Guide</h3>
+                        <div style="display: flex; gap: 16px;">
+                            <div style="width: 44px; height: 44px; background: #171717; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i data-lucide="facebook" style="width: 18px;"></i></div>
+                            <div style="width: 44px; height: 44px; background: #171717; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i data-lucide="twitter" style="width: 18px;"></i></div>
+                            <div style="width: 44px; height: 44px; background: #25D366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i data-lucide="message-circle" style="width: 18px;"></i></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 80px; text-align: center;">
+                        <a href="blog.html" class="blog-link" style="margin: 0 auto; font-size: 16px; border-bottom-width: 3px;">Back to Blog</a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        lucide.createIcons();
+    </script>
+    <style>
+        .blog-body p { margin-bottom: 32px; }
+        .blog-body ol, .blog-body ul { margin-bottom: 32px; padding-left: 24px; }
+        .blog-body li { margin-bottom: 12px; }
+    </style>
+</body>
+</html>

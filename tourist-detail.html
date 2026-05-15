@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guide - OK India Car Rentals Goa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body style="background: #fff;">
+    <nav id="navbar" class="scrolled" data-no-transparent>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="fleet.html" class="nav-link">Fleet</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <a href="tel:+917249367599" class="btn btn-primary">Book Now</a>
+        </div>
+    </nav>
+
+    <div id="detail-content" style="padding-top: 140px;">
+        <div class="container" style="margin-bottom: 40px;">
+            <a href="index.html" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--primary); text-transform: uppercase; font-size: 13px;">
+                <i data-lucide="arrow-left" style="width: 16px;"></i> Back to Home
+            </a>
+        </div>
+        <!-- Content will be populated by JS -->
+    </div>
+
+    <footer style="background: #fafafa; padding: 80px 0 40px; border-top: 1px solid #eee;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
+                <div style="grid-column: span 2;">
+                    <div class="logo" style="margin-bottom: 20px; color: #171717;">
+                        <div class="logo-icon"><i data-lucide="car"></i></div>
+                        <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
+                    </div>
+                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in South and North Goa with honesty.</p>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Pages</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fleet.html">Our Fleet</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Contact</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
+                        <li><i data-lucide="phone" style="width: 14px; color: #f59e0b;"></i> +91 72493 67599</li>
+                        <li><i data-lucide="map-pin" style="width: 14px; color: #f59e0b;"></i> Utorda, South Goa</li>
+                        <li><i data-lucide="clock" style="width: 14px; color: #f59e0b;"></i> 24/7 Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #eee; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p style="font-size: 10px; font-weight: 900; text-transform: uppercase; color: #a3a3a3;">© 2024 OK INDIA CAR RENTALS GOA. ALL RIGHTS RESERVED.</p>
+                <div style="display: flex; gap: 20px;">
+                   <i data-lucide="instagram" style="width: 18px; color: #a3a3a3;"></i>
+                   <i data-lucide="facebook" style="width: 18px; color: #a3a3a3;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const guides = {
+            'north-goa': {
+                title: 'North Goa Vibes',
+                subtitle: 'Party, Beaches & Sunsets',
+                image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200',
+                description: 'North Goa is the heartbeat of Goa\'s tourism. From the legendary beaches of Baga and Calangute to the hippie vibes of Arambol, there is something for everyone. If you love nightlife, watersports, and crowded markets, North Goa is your place.',
+                tips: [
+                    'Visit Chapora Fort for a "Dil Chahta Hai" moment.',
+                    'Enjoy sunset at Thalassa in Siolim.',
+                    'Park carefully near Baga beach as it gets very crowded.'
+                ]
+            },
+            'south-goa': {
+                title: 'South Goa Serenity',
+                subtitle: 'Peace, Luxury & White Sands',
+                image: 'https://images.unsplash.com/photo-1512789677070-60d59049986c?q=80&w=1200',
+                description: 'South Goa is known for its pristine beaches, luxury resorts, and quiet atmosphere. Unlike North Goa, the south is about relaxation and connecting with nature. Explore the white sands of Colva or the crescent-shaped Palolem beach.',
+                tips: [
+                    'Explore the Cabo de Rama Fort for stunning ocean views.',
+                    'Try authentic Goan food at Martin\'s Corner.',
+                    'Best for families and couples seeking tranquility.'
+                ]
+            },
+            'dudhsagar': {
+                title: 'Dudhsagar Falls',
+                subtitle: 'The Sea of Milk',
+                image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200',
+                description: 'One of India\'s tallest waterfalls, Dudhsagar is located on the Mandovi River. The falls look like a sea of milk pouring down the mountain. It is a must-visit for adventure seekers and nature lovers.',
+                tips: [
+                    'Best time to visit is October to May.',
+                    'You need to take a Jeep Safari from Kulem.',
+                    'Wear comfortable shoes for the minor trek.'
+                ]
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const guideId = urlParams.get('id');
+        const guide = guides[guideId] || guides['north-goa'];
+
+        document.getElementById('detail-content').innerHTML = `
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <span class="section-subtitle">${guide.subtitle}</span>
+                    <h1 class="section-title" style="margin-bottom: 40px;">${guide.title}</h1>
+                    <img src="${guide.image}" style="width: 100%; height: 500px; object-fit: cover; border-radius: 40px; margin-bottom: 60px; box-shadow: 0 40px 80px rgba(0,0,0,0.1);">
+                    
+                    <div style="font-size: 18px; line-height: 1.8; color: #525252; margin-bottom: 60px;">
+                        <p>${guide.description}</p>
+                    </div>
+
+                    <div style="background: #fafafa; padding: 60px; border-radius: 40px; border: 1px solid #eee;">
+                        <h3 class="font-black uppercase italic" style="margin-bottom: 32px; font-size: 24px;">Expert Travel Tips</h3>
+                        <ul style="display: flex; flex-direction: column; gap: 24px;">
+                            ${guide.tips.map(tip => `
+                                <li style="display: flex; gap: 20px; align-items: flex-start;">
+                                    <div style="width: 32px; height: 32px; background: #f59e0b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; shrink: 0; font-weight: 800; font-size: 14px;">✓</div>
+                                    <p style="font-size: 16px; font-weight: 600;">${tip}</p>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 80px; text-align: center;">
+                        <h2 class="section-title" style="font-size: 32px; margin-bottom: 32px;">Ready to Explore?</h2>
+                        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                            <a href="fleet.html" class="btn btn-primary" style="padding: 20px 40px;">Pick a Car</a>
+                            <a href="index.html" class="btn btn-outline" style="padding: 20px 40px;">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
