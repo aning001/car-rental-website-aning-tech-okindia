@@ -19,33 +19,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Mobile Menu Toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('close-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
+    const toggleMenu = (show) => {
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (!mobileMenu) return;
+        
+        if (show) {
             mobileMenu.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scroll
-        });
-    }
-
-    if (closeBtn && mobileMenu) {
-        closeBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
+            document.body.style.overflow = 'hidden';
+        } else {
             mobileMenu.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scroll
-        });
-    }
+            document.body.style.overflow = '';
+        }
+    };
+
+    // Use event delegation for menu triggers to be more robust
+    document.addEventListener('click', (e) => {
+        const target = e.target.closest('#menu-btn, .menu-btn-trigger');
+        if (target) {
+            e.preventDefault();
+            toggleMenu(true);
+        }
+
+        const closeTarget = e.target.closest('#close-menu');
+        if (closeTarget) {
+            e.preventDefault();
+            toggleMenu(false);
+        }
+    });
 
     // Close menu when clicking a link
+    const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenu) {
         const menuLinks = mobileMenu.querySelectorAll('a');
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
+                toggleMenu(false);
             });
         });
     }
