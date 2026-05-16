@@ -1,35 +1,21 @@
 /* OK India Car Rentals - Global Interactivity */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Lucide icons
-    const initIcons = () => {
-        if (window.lucide) {
-            window.lucide.createIcons();
-        }
-    };
-    initIcons();
-
-    // Fallback if script loads late
-    setTimeout(initIcons, 1000);
-    setTimeout(initIcons, 2000);
-
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
     if (navbar) {
         const isAlwaysScrolled = navbar.hasAttribute('data-no-transparent');
         
-        window.addEventListener('scroll', () => {
+        const handleScroll = () => {
             if (window.scrollY > 20 || isAlwaysScrolled) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
-        });
-        
-        // Initial state check
-        if (window.scrollY > 20 || isAlwaysScrolled) {
-            navbar.classList.add('scrolled');
-        }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial check
     }
 
     // Mobile Menu Toggle

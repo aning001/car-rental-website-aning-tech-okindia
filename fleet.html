@@ -6,7 +6,8 @@
     <title>Our Fleet | Self Drive Car Rental in Utroda - OK India</title>
     <meta name="description" content="Explore our wide range of cars for rental in Utroda and self drive car rental in Colva Beach. SUVs, Sedans, and Hatchbacks at best prices.">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <style>
         .filter-btn { padding: 12px 24px; border-radius: 99px; font-size: 12px; font-weight: 900; background: white; border: 1px solid #eee; cursor: pointer; text-transform: uppercase; }
@@ -18,7 +19,7 @@
     <nav id="navbar" class="scrolled" data-no-transparent>
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-icon"><i class="fas fa-car"></i></div>
                 <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
             </a>
             <div class="nav-links">
@@ -31,8 +32,8 @@
                 <a href="testimonials.html" class="nav-link">Reviews</a>
             </div>
             <div style="display: flex; gap: 12px; align-items: center;">
-                <a href="tel:+917249367599" class="btn btn-primary hide-mobile"><i data-lucide="phone"></i> Call Now</a>
-                <button id="menu-btn" class="menu-btn-trigger"><i data-lucide="menu"></i></button>
+                <a href="tel:+917249367599" class="btn btn-primary hide-mobile"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <button id="menu-btn" class="menu-btn-trigger"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
@@ -40,10 +41,10 @@
     <div id="mobile-menu" style="display: none; position: fixed; inset: 0; z-index: 1100; background: white; flex-direction: column; color: #171717;">
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
             <div class="logo">
-                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-icon"><i class="fas fa-car"></i></div>
                 <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
             </div>
-            <button id="close-menu" style="background: none; border: none; padding: 10px;"><i data-lucide="x"></i></button>
+            <button id="close-menu" style="background: none; border: none; padding: 10px;"><i class="fas fa-times"></i></button>
         </div>
         <div style="display: flex; flex-direction: column; gap: 20px; padding: 40px;">
             <a href="index.html" style="font-size: 24px; font-weight: 900;">Home</a>
@@ -177,15 +178,15 @@
     <!-- Rental Policy Section -->
     <section class="section" style="background: #fafafa;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px;">
+            <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px;">
                 <div>
                    <h2 class="section-subtitle">Fair Terms</h2>
                    <h3 class="section-title" style="font-size: 32px;">Rental <span style="color: #f59e0b;">Policy</span></h3>
                    <ul style="color: #525252; display: flex; flex-direction: column; gap: 16px;">
-                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> 240 KMs limit per day (enough for Goa)</li>
-                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> Fuel is not included (Return same level)</li>
-                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> Valid Laminated DL is mandatory</li>
-                       <li><i data-lucide="check" style="color: #f59e0b; width: 16px;"></i> Damage costs are borne by the hirer</li>
+                       <li><i class="fas fa-check-circle" style="color: #f59e0b; width: 16px; margin-right: 8px;"></i> 240 KMs limit per day (enough for Goa)</li>
+                       <li><i class="fas fa-check-circle" style="color: #f59e0b; width: 16px; margin-right: 8px;"></i> Fuel is not included (Return same level)</li>
+                       <li><i class="fas fa-check-circle" style="color: #f59e0b; width: 16px; margin-right: 8px;"></i> Valid Laminated DL is mandatory</li>
+                       <li><i class="fas fa-check-circle" style="color: #f59e0b; width: 16px; margin-right: 8px;"></i> Damage costs are borne by the hirer</li>
                    </ul>
                 </div>
                 <div>
@@ -214,16 +215,16 @@
     <section class="section" style="background: #171717; color: white;">
         <div class="container">
             <div style="text-align: center; margin-bottom: 40px;">
-                <h2 class="section-title" style="color: #f59e0b;">Airport Delivery <span style="color: white;">Services</span></h2>
+                <h2 class="section-title" style="color: #f59e0b;">South Goa Delivery <span style="color: white;">Locations</span></h2>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: center;">
+            <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: center;">
                 <div style="padding: 40px; background: rgba(255,255,255,0.05); border-radius: 24px;">
-                    <h4 class="font-black uppercase italic" style="color: #f59e0b; font-size: 24px; margin-bottom: 12px;">Mopa Airport (GXP)</h4>
-                    <p style="opacity: 0.8;">New North Goa Airport. We provide instant rentals right outside the arrival gate.</p>
+                    <h4 class="font-black uppercase italic" style="color: #f59e0b; font-size: 24px; margin-bottom: 12px;">Utorda & Colva</h4>
+                    <p style="opacity: 0.8;">Heart of South Goa. We provide instant delivery to all beachfront resorts and guesthouses.</p>
                 </div>
                 <div style="padding: 40px; background: rgba(255,255,255,0.05); border-radius: 24px;">
-                    <h4 class="font-black uppercase italic" style="color: #f59e0b; font-size: 24px; margin-bottom: 12px;">Dabolim Airport (GOI)</h4>
-                    <p style="opacity: 0.8;">Central Goa Airport. Reliable pickups even for late-night flights.</p>
+                    <h4 class="font-black uppercase italic" style="color: #f59e0b; font-size: 24px; margin-bottom: 12px;">Goa Airports</h4>
+                    <p style="opacity: 0.8;">Covering both Mopa (North) and Dabolim (South) airports for your convenience.</p>
                 </div>
             </div>
         </div>
@@ -235,11 +236,11 @@
             <h2 class="section-title">Fleet <span style="color: #f59e0b;">FAQs</span></h2>
             <div style="text-align: left; margin-top: 40px;">
                 <div class="faq-item">
-                    <button class="faq-btn"><h4>Are automatic cars available?</h4><i data-lucide="chevron-right"></i></button>
+                    <button class="faq-btn"><h4>Are automatic cars available?</h4><i class="fas fa-chevron-right"></i></button>
                     <div class="faq-answer">Yes, we have a wide range of automatic cars including Thar AT, Creta AT, and Baleno AT for a stress-free drive.</div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-btn"><h4>What if the car breaks down?</h4><i data-lucide="chevron-right"></i></button>
+                    <button class="faq-btn"><h4>What if the car breaks down?</h4><i class="fas fa-chevron-right"></i></button>
                     <div class="faq-answer">We provide 24/7 roadside assistance. In case of a major issue, we will provide a replacement vehicle within hours.</div>
                 </div>
             </div>
@@ -260,10 +261,10 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
                 <div style="grid-column: span 2;">
                     <div class="logo" style="margin-bottom: 20px; color: #171717;">
-                        <div class="logo-icon"><i data-lucide="car"></i></div>
+                        <div class="logo-icon"><i class="fas fa-car"></i></div>
                         <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
                     </div>
-                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in South and North Goa with honesty.</p>
+                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in Utroda, Colva Beach and South Goa with honesty.</p>
                 </div>
                 <div>
                     <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Pages</h4>
@@ -278,25 +279,25 @@
                 <div>
                     <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Contact</h4>
                     <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
-                        <li><i data-lucide="phone" style="width: 14px; color: #f59e0b;"></i> +91 72493 67599</li>
-                        <li><i data-lucide="map-pin" style="width: 14px; color: #f59e0b;"></i> Utorda, South Goa</li>
-                        <li><i data-lucide="clock" style="width: 14px; color: #f59e0b;"></i> 24/7 Delivery</li>
+                        <li><i class="fas fa-phone-alt" style="font-size: 14px; color: #f59e0b; margin-right: 10px;"></i> +91 72493 67599</li>
+                        <li><i class="fas fa-map-marker-alt" style="font-size: 14px; color: #f59e0b; margin-right: 10px;"></i> Utorda, South Goa</li>
+                        <li><i class="fas fa-clock" style="font-size: 14px; color: #f59e0b; margin-right: 10px;"></i> 24/7 Delivery</li>
                     </ul>
                 </div>
             </div>
             <div style="border-top: 1px solid #eee; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
                 <p style="font-size: 10px; font-weight: 900; text-transform: uppercase; color: #a3a3a3;">© 2024 OK INDIA CAR RENTALS GOA. ALL RIGHTS RESERVED.</p>
                 <div style="display: flex; gap: 20px;">
-                   <i data-lucide="instagram" style="width: 18px; color: #a3a3a3;"></i>
-                   <i data-lucide="facebook" style="width: 18px; color: #a3a3a3;"></i>
+                   <i class="fab fa-instagram" style="font-size: 18px; color: #a3a3a3;"></i>
+                   <i class="fab fa-facebook-f" style="font-size: 18px; color: #a3a3a3;"></i>
                 </div>
             </div>
         </div>
     </footer>
 
     <div class="fixed-btns">
-        <a href="tel:+917249367599" class="fab fab-phone"><i data-lucide="phone"></i></a>
-        <a href="https://wa.me/917249367599" target="_blank" class="fab fab-whatsapp"><i data-lucide="message-circle"></i></a>
+        <a href="tel:+917249367599" class="floating-btn fbtn-phone"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/917249367599" target="_blank" class="floating-btn fbtn-whatsapp"><i class="fab fa-whatsapp"></i></a>
     </div>
 
     <script src="script.js"></script>

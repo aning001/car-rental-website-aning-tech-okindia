@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - OK India Car Rentals Goa</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body style="background: #fff;">
     <nav id="navbar" class="scrolled" data-no-transparent>
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-icon"><i class="fas fa-car"></i></div>
                 <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
             </a>
             <div class="nav-links">
@@ -24,8 +25,8 @@
                 <a href="faq.html" class="nav-link">FAQ</a>
             </div>
             <div style="display: flex; gap: 12px; align-items: center;">
-                <a href="tel:+917249367599" class="btn btn-primary hide-mobile"><i data-lucide="phone"></i> Call Now</a>
-                <button id="menu-btn" class="menu-btn-trigger"><i data-lucide="menu"></i></button>
+                <a href="tel:+917249367599" class="btn btn-primary hide-mobile"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <button id="menu-btn" class="menu-btn-trigger"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
@@ -33,10 +34,10 @@
     <div id="mobile-menu" style="display: none; position: fixed; inset: 0; z-index: 1100; background: white; flex-direction: column; color: #171717;">
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
             <div class="logo">
-                <div class="logo-icon"><i data-lucide="car"></i></div>
+                <div class="logo-icon"><i class="fas fa-car"></i></div>
                 <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
             </div>
-            <button id="close-menu" style="background: none; border: none; padding: 10px;"><i data-lucide="x"></i></button>
+            <button id="close-menu" style="background: none; border: none; padding: 10px;"><i class="fas fa-times"></i></button>
         </div>
         <div style="display: flex; flex-direction: column; gap: 20px; padding: 40px;">
             <a href="index.html" style="font-size: 24px; font-weight: 900;">Home</a>
@@ -55,7 +56,7 @@
     <article id="blog-content" style="padding-top: 140px;">
         <div class="container" style="margin-bottom: 40px;">
             <a href="index.html" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--primary); text-transform: uppercase; font-size: 13px;">
-                <i data-lucide="arrow-left" style="width: 16px;"></i> Back to Home
+                <i class="fas fa-arrow-left" style="width: 16px;"></i> Back to Home
             </a>
         </div>
         <!-- Content will be populated by JS -->
@@ -66,10 +67,10 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
                 <div style="grid-column: span 2;">
                     <div class="logo" style="margin-bottom: 20px; color: #171717;">
-                        <div class="logo-icon"><i data-lucide="car"></i></div>
+                        <div class="logo-icon"><i class="fas fa-car"></i></div>
                         <div class="logo-text"><span class="logo-main">OK INDIA</span><span class="logo-sub">Car Rentals Goa</span></div>
                     </div>
-                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in South and North Goa with honesty.</p>
+                    <p style="color: #737373; max-width: 400px;">Goa's most trusted self-drive car rental partner since 2013. Serving explorers in Utroda, Colva Beach and South Goa with honesty.</p>
                 </div>
                 <div>
                     <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Pages</h4>
@@ -84,17 +85,17 @@
                 <div>
                     <h4 class="font-black uppercase italic" style="font-size: 14px; margin-bottom: 24px; color: #a3a3a3;">Contact</h4>
                     <ul style="display: flex; flex-direction: column; gap: 12px; font-weight: 700; font-size: 14px; color: #525252;">
-                        <li><i data-lucide="phone" style="width: 14px; color: #f59e0b;"></i> +91 72493 67599</li>
-                        <li><i data-lucide="map-pin" style="width: 14px; color: #f59e0b;"></i> Utorda, South Goa</li>
-                        <li><i data-lucide="clock" style="width: 14px; color: #f59e0b;"></i> 24/7 Delivery</li>
+                        <li><i class="fas fa-phone-alt" style="font-size: 14px; color: #f59e0b; margin-right: 10px;"></i> +91 72493 67599</li>
+                        <li><i class="fas fa-map-marker-alt" style="font-size: 14px; color: #f59e0b; margin-right: 10px;"></i> Utorda, South Goa</li>
+                        <li><i class="fas fa-clock" style="font-size: 14px; color: #f59e0b; margin-right: 10px;"></i> 24/7 Delivery</li>
                     </ul>
                 </div>
             </div>
             <div style="border-top: 1px solid #eee; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
                 <p style="font-size: 10px; font-weight: 900; text-transform: uppercase; color: #a3a3a3;">© 2024 OK INDIA CAR RENTALS GOA. ALL RIGHTS RESERVED.</p>
                 <div style="display: flex; gap: 20px;">
-                   <i data-lucide="instagram" style="width: 18px; color: #a3a3a3;"></i>
-                   <i data-lucide="facebook" style="width: 18px; color: #a3a3a3;"></i>
+                   <i class="fab fa-instagram" style="font-size: 18px; color: #a3a3a3;"></i>
+                   <i class="fab fa-facebook-f" style="font-size: 18px; color: #a3a3a3;"></i>
                 </div>
             </div>
         </div>
@@ -166,9 +167,9 @@
                     <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid #eee;">
                         <h3 class="font-black uppercase italic" style="margin-bottom: 32px;">Share this Guide</h3>
                         <div style="display: flex; gap: 16px;">
-                            <div style="width: 44px; height: 44px; background: #171717; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i data-lucide="facebook" style="width: 18px;"></i></div>
-                            <div style="width: 44px; height: 44px; background: #171717; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i data-lucide="twitter" style="width: 18px;"></i></div>
-                            <div style="width: 44px; height: 44px; background: #25D366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i data-lucide="message-circle" style="width: 18px;"></i></div>
+                            <div style="width: 44px; height: 44px; background: #171717; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i class="fab fa-facebook-f" style="font-size: 18px;"></i></div>
+                            <div style="width: 44px; height: 44px; background: #171717; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i class="fab fa-twitter" style="font-size: 18px;"></i></div>
+                            <div style="width: 44px; height: 44px; background: #25D366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i class="fab fa-whatsapp" style="font-size: 18px;"></i></div>
                         </div>
                     </div>
 
@@ -179,8 +180,12 @@
             </div>
         `;
 
-        lucide.createIcons();
+        // lucide.createIcons();
     </script>
+    <div class="fixed-btns">
+        <a href="tel:+917249367599" class="floating-btn fbtn-phone"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/917249367599" target="_blank" class="floating-btn fbtn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
     <style>
         .blog-body p { margin-bottom: 32px; }
         .blog-body ol, .blog-body ul { margin-bottom: 32px; padding-left: 24px; }
