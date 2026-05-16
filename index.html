@@ -54,7 +54,7 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" style="display: none; position: fixed; inset: 0; z-index: 1100; background: white; flex-direction: column; color: #171717;">
+    <div id="mobile-menu" class="mobile-menu-overlay">
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
             <div class="logo">
                 <div class="logo-icon"><i class="fas fa-car"></i></div>
@@ -114,115 +114,115 @@
 
             <div class="fleet-grid">
                 <!-- Car 1: Swift -->
-                <div class="car-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Swift">
-                        <span class="card-tag">Budget</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-title"><h4>Maruti Swift</h4><span class="card-subtitle">Hatchback • MT</span></div>
-                            <div class="card-price"><p class="price-value">₹1200</p><p class="price-label">Daily</p></div>
+                    <div class="car-card" onclick="window.location.href='fleet-detail.html?id=swift'">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Swift">
+                            <span class="card-tag">Budget</span>
                         </div>
-                        <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-title"><h4>Maruti Swift</h4><span class="card-subtitle">Hatchback • MT</span></div>
+                                <div class="card-price"><p class="price-value">₹1200</p><p class="price-label">Daily</p></div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                                <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Car 2: Thar -->
-                <div class="car-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop" alt="Mahindra Thar">
-                        <span class="card-tag">Adventure</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-title"><h4>Mahindra Thar</h4><span class="card-subtitle">SUV • 4x4 MT</span></div>
-                            <div class="card-price"><p class="price-value">₹3500</p><p class="price-label">Daily</p></div>
+                    <!-- Car 2: Thar -->
+                    <div class="car-card" onclick="window.location.href='fleet-detail.html?id=thar'">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop" alt="Mahindra Thar">
+                            <span class="card-tag">Adventure</span>
                         </div>
-                        <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-title"><h4>Mahindra Thar</h4><span class="card-subtitle">SUV • 4x4 MT</span></div>
+                                <div class="card-price"><p class="price-value">₹3500</p><p class="price-label">Daily</p></div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                                <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Car 3: Ertiga -->
-                <div class="car-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Ertiga">
-                        <span class="card-tag">Family</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-title"><h4>Maruti Ertiga</h4><span class="card-subtitle">7 Seater • AT</span></div>
-                            <div class="card-price"><p class="price-value">₹2800</p><p class="price-label">Daily</p></div>
+                    <!-- Car 3: Ertiga -->
+                    <div class="car-card" onclick="window.location.href='fleet-detail.html?id=ertiga'">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Ertiga">
+                            <span class="card-tag">Family</span>
                         </div>
-                        <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-title"><h4>Maruti Ertiga</h4><span class="card-subtitle">7 Seater • AT</span></div>
+                                <div class="card-price"><p class="price-value">₹2800</p><p class="price-label">Daily</p></div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                                <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Car 4: Baleno -->
-                <div class="car-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Baleno">
-                        <span class="card-tag">Premium</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-title"><h4>Maruti Baleno</h4><span class="card-subtitle">Hatchback • MT</span></div>
-                            <div class="card-price"><p class="price-value">₹1500</p><p class="price-label">Daily</p></div>
+                    <!-- Car 4: Baleno -->
+                    <div class="car-card" onclick="window.location.href='fleet-detail.html?id=baleno'">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Baleno">
+                            <span class="card-tag">Premium</span>
                         </div>
-                        <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-title"><h4>Maruti Baleno</h4><span class="card-subtitle">Hatchback • MT</span></div>
+                                <div class="card-price"><p class="price-value">₹1500</p><p class="price-label">Daily</p></div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                                <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Car 5: Thar AT -->
-                <div class="car-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop" alt="Mahindra Thar AT">
-                        <span class="card-tag">SUV AT</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-title"><h4>Thar Convertible</h4><span class="card-subtitle">SUV • AT</span></div>
-                            <div class="card-price"><p class="price-value">₹4500</p><p class="price-label">Daily</p></div>
+                    <!-- Car 5: Thar AT -->
+                    <div class="car-card" onclick="window.location.href='fleet-detail.html?id=thar'">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop" alt="Mahindra Thar AT">
+                            <span class="card-tag">SUV AT</span>
                         </div>
-                        <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-title"><h4>Thar Convertible</h4><span class="card-subtitle">SUV • AT</span></div>
+                                <div class="card-price"><p class="price-value">₹4500</p><p class="price-label">Daily</p></div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                                <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Car 6: Creta -->
-                <div class="car-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Hyundai Creta">
-                        <span class="card-tag">Luxury SUV</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-title"><h4>Hyundai Creta</h4><span class="card-subtitle">SUV • AT</span></div>
-                            <div class="card-price"><p class="price-value">₹3200</p><p class="price-label">Daily</p></div>
+                    <!-- Car 6: Creta -->
+                    <div class="car-card" onclick="window.location.href='fleet-detail.html?id=creta'">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Hyundai Creta">
+                            <span class="card-tag">Luxury SUV</span>
                         </div>
-                        <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-title"><h4>Hyundai Creta</h4><span class="card-subtitle">SUV • AT</span></div>
+                                <div class="card-price"><p class="price-value">₹3200</p><p class="price-label">Daily</p></div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                                <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 
                 <!-- Car 7: i20 -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=baleno'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Hyundai i20">
                         <span class="card-tag">Hatchback</span>
@@ -233,14 +233,14 @@
                             <div class="card-price"><p class="price-value">₹1800</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 8: Fortuner -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=creta'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Toyota Fortuner">
                         <span class="card-tag">Luxury SUV</span>
@@ -251,14 +251,14 @@
                             <div class="card-price"><p class="price-value">₹8500</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 9: Venue -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=baleno'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Hyundai Venue">
                         <span class="card-tag">Compact SUV</span>
@@ -269,14 +269,14 @@
                             <div class="card-price"><p class="price-value">₹2200</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 10: WagonR -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=swift'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop" alt="Maruti WagonR">
                         <span class="card-tag">Budget</span>
@@ -287,14 +287,14 @@
                             <div class="card-price"><p class="price-value">₹1000</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 11: Brezza -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=ertiga'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Brezza">
                         <span class="card-tag">SUV</span>
@@ -305,14 +305,14 @@
                             <div class="card-price"><p class="price-value">₹2800</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 12: Ciaz -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=baleno'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Maruti Ciaz">
                         <span class="card-tag">Sedan</span>
@@ -323,15 +323,15 @@
                             <div class="card-price"><p class="price-value">₹2500</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- New Cars Added -->
                 <!-- Car 13: Kia Carens -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=ertiga'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Kia Carens">
                         <span class="card-tag">Family SUV</span>
@@ -342,14 +342,14 @@
                             <div class="card-price"><p class="price-value">₹3800</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 14: Maruti Ignis -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=swift'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop" alt="Maruti Ignis">
                         <span class="card-tag">Budget AT</span>
@@ -360,14 +360,14 @@
                             <div class="card-price"><p class="price-value">₹1400</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 15: Hyundai Verna -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=creta'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Hyundai Verna">
                         <span class="card-tag">Premium Sedan</span>
@@ -378,14 +378,14 @@
                             <div class="card-price"><p class="price-value">₹3500</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 16: Kia Sonet -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=baleno'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Kia Sonet">
                         <span class="card-tag">Compact SUV</span>
@@ -396,14 +396,14 @@
                             <div class="card-price"><p class="price-value">₹2800</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 17: Mahindra Scorpio N -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=thar'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1662453531980-60b64d39f400?q=80&w=800&auto=format&fit=crop" alt="Mahindra Scorpio N">
                         <span class="card-tag">Powerful SUV</span>
@@ -414,14 +414,14 @@
                             <div class="card-price"><p class="price-value">₹5500</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Car 18: Hyundai Alcazar -->
-                <div class="car-card">
+                <div class="car-card" onclick="window.location.href='fleet-detail.html?id=ertiga'">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1721013401569-424759600984?q=80&w=800&auto=format&fit=crop" alt="Hyundai Alcazar">
                         <span class="card-tag">Luxury 7 Seater</span>
@@ -432,8 +432,8 @@
                             <div class="card-price"><p class="price-value">₹4500</p><p class="price-label">Daily</p></div>
                         </div>
                         <div class="card-actions">
-                            <a href="tel:+917249367599" class="btn btn-outline">Call</a>
-                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary">Rent</a>
+                            <a href="tel:+917249367599" class="btn btn-outline" onclick="event.stopPropagation();">Call</a>
+                            <a href="https://wa.me/917249367599" target="_blank" class="btn btn-primary" onclick="event.stopPropagation();">Rent</a>
                         </div>
                     </div>
                 </div>

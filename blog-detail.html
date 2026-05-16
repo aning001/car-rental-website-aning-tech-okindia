@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <div id="mobile-menu" style="display: none; position: fixed; inset: 0; z-index: 1100; background: white; flex-direction: column; color: #171717;">
+    <div id="mobile-menu" class="mobile-menu-overlay">
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
             <div class="logo">
                 <div class="logo-icon"><i class="fas fa-car"></i></div>
@@ -132,10 +132,10 @@
             },
             'save-money-rentals': {
                 tag: 'Smart Travel',
-                title: 'How to Save 30% on Rentals in Goa',
+                title: 'How to Save 30% on Rentals',
                 image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200',
                 content: `
-                    <p>Renting a car shouldn\'t break your vacation budget. Many tourists end up paying inflated prices because they book last minute or through middlemen.</p>
+                    <p>Renting a car shouldn't break your vacation budget. Many tourists end up paying inflated prices because they book last minute or through middlemen.</p>
                     <p>Here are some secrets to getting the best rates:</p>
                     <ul>
                         <li><strong>Book Directly:</strong> Avoid aggregators. Direct vendors like OK India offer better rates and personalized service.</li>
@@ -143,6 +143,22 @@
                         <li><strong>Long Term Rental:</strong> Booking for a week? Ask for a long-term discount.</li>
                         <li><strong>Airport Pickups:</strong> Sometimes taking a car from the airport saves you on expensive taxi transfers.</li>
                     </ul>
+                `
+            },
+            'mopa-airport-guide': {
+                tag: 'Travel Guide',
+                title: 'Mopa Airport to North Goa: Road Trip Guide',
+                image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200',
+                content: `
+                    <p>The new Mopa Airport (Manohar International Airport) has opened up a whole new gateway to North Goa. If you're landing here, renting a self-drive car is the most efficient way to reach your destination.</p>
+                    <p>The drive from Mopa to famous beaches like Calangute, Baga, and Anjuna takes about 45-60 minutes via the NH-66. The roads are well-maintained and offer scenic views of the Western Ghats foothills.</p>
+                    <p><strong>Tips for Mopa Airport Pickups:</strong></p>
+                    <ul>
+                        <li>Book your car in advance to avoid waiting at the terminal.</li>
+                        <li>Ask your rental provider to meet you at the designated pickup point.</li>
+                        <li>Check your fuel level before starting your journey; there are multiple fuel stations on the way to North Goa.</li>
+                    </ul>
+                    <p>At OK India, we provide seamless delivery to Mopa Airport for our valued customers.</p>
                 `
             }
         };
@@ -191,5 +207,6 @@
         .blog-body ol, .blog-body ul { margin-bottom: 32px; padding-left: 24px; }
         .blog-body li { margin-bottom: 12px; }
     </style>
+    <script src="script.js"></script>
 </body>
 </html>
