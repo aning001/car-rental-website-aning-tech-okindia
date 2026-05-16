@@ -293,7 +293,12 @@ nav.scrolled .nav-link {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
-    animation: pulse-glow 3s infinite ease-in-out;
+}
+
+.hero-phone-badge:hover {
+    background: rgba(245, 158, 11, 0.25);
+    border-color: var(--white);
+    color: var(--white);
 }
 
 .hero-phone-badge i {
@@ -341,6 +346,10 @@ nav.scrolled .nav-link {
 
 .hero-content > * {
     animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-bounce-slow {
+    animation: bounce 3s infinite ease-in-out;
 }
 
 .hero-content h1 { animation-delay: 0.2s; }
