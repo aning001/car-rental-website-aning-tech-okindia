@@ -24,14 +24,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
 
     if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.style.display = 'flex';
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
         });
     }
 
     if (closeBtn && mobileMenu) {
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.style.display = 'none';
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        });
+    }
+
+    // Close menu when clicking a link
+    if (mobileMenu) {
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
         });
     }
 

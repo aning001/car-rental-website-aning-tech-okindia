@@ -27,11 +27,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-family);
     background-color: var(--white);
     color: var(--neutral-900);
-    overflow-x: hidden;
     line-height: 1.6;
 }
 
@@ -54,7 +57,7 @@ img {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 24px;
 }
 
 .section {
@@ -378,8 +381,8 @@ nav.scrolled .nav-link {
 
 .tourist-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 .tourist-card {
@@ -454,9 +457,9 @@ nav.scrolled .nav-link {
 /* Fleet Grid */
 .fleet-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 40px;
-    margin-top: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .car-card {
@@ -594,8 +597,8 @@ nav.scrolled .nav-link {
 /* Blog Styles */
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .blog-card {
@@ -756,9 +759,22 @@ nav.scrolled .nav-link {
 @media (max-width: 768px) {
     .hide-mobile { display: none !important; }
     .nav-links { display: none; }
-    .menu-btn-trigger { display: block; }
+    .menu-btn-trigger { 
+        display: block; 
+        font-size: 28px;
+        padding: 12px;
+        margin-right: -8px;
+    }
+
+    .menu-btn-trigger i {
+        font-size: inherit;
+    }
     
-    .grid-2 {
+    #mobile-menu.active {
+        display: flex !important;
+    }
+
+    .grid-2, .grid-3, .grid-4 {
         grid-template-columns: 1fr !important;
         gap: 32px !important;
     }
@@ -768,13 +784,65 @@ nav.scrolled .nav-link {
     }
 
     .container {
-        padding: 0 20px;
+        padding: 0 16px;
+        max-width: 100% !important;
     }
 
     nav { padding: 12px 0; }
     nav.scrolled { padding: 10px 0; }
     .hero { padding-top: 80px; padding-bottom: 15px; min-height: auto; }
     .hero h1 { font-size: 30px; margin-bottom: 12px; line-height: 1.1; }
-    .hero-description { font-size: 15px; margin-bottom: 24px; }
-    .hero-content { padding: 0 10px; }
+    .hero-description { font-size: 15px; margin-bottom: 20px; }
+    .hero-content { padding: 0 5px; }
+    
+    .hero-content div[style*="display: flex"] {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px !important;
+        justify-content: center;
+    }
+    
+    .hero-content .btn {
+        padding: 14px 24px !important;
+        font-size: 14px !important;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .logo-main {
+        font-size: 20px;
+    }
+
+    .car-card, .tourist-card, .blog-card {
+        border-radius: 24px !important;
+    }
+
+    .card-content, .blog-content, .tourist-overlay {
+        padding: 20px !important;
+    }
+
+    .card-img, .blog-img {
+        height: 200px !important;
+    }
+
+    .fleet-grid, .tourist-grid, .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .fixed-btns {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .floating-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hero-phone-badge {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
 }
